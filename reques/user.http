@@ -64,7 +64,7 @@ Content-Type: application/json
 
 
 ### enviar correo
-POST http://localhost:3000/recuperacionCorreo/20210672@uthh.edu.mx
+POST https://localhost:3000/recuperacionCorreo/20210672@uthh.edu.mx
 Content-Type: application/json
 
 {

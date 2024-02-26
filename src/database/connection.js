@@ -12,10 +12,9 @@ import sql from "mssql";
  database: 'cruz_roja',
   options: {
     encrypt: true, // for azure
-    trustServerCertificate: true, // change to true for local dev / self-signed certs
-  },
+    trustServerCertificate: true, // change to true for local dev / self-signed certs
+  },
 };
-
 
 
 export const getConnection = async () => {
