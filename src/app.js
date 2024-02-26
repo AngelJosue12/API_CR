@@ -15,17 +15,13 @@ app.set("port", config.port);
 app.use(express.json());
 
 app.use(cors());
-app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', '*');
-    res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
-    res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-    next();
-  });
 app.use(morgan("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(userRoutes);
-
+app.get("/", (req,res)=>{
+  res.send('welcomen to my API');
+});
 // Routes
 //app.use("/api", productRoutes);
 
