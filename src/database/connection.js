@@ -6,10 +6,10 @@ import sql from "mssql";
   //password: config.dbPassword,
  // server: config.dbServer,
  // database: config.dbDatabase,
- user: 'cruzroja',
- password: '@ng3l_2021',
- server: 'localhost',
- database: 'cruz_roja',
+ user: 'angelJosue_SQLLogin_1',
+  password: 'vvxfsv8yp9',
+  server: 'cruz_roja.mssql.somee.com',
+  database: 'cruz_roja', 
   options: {
     encrypt: true, // for azure
     trustServerCertificate: true, // change to true for local dev / self-signed certs
